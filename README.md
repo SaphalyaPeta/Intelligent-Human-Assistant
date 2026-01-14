@@ -5,12 +5,8 @@ In part 1, we aimed to make the command line interface more usable by allowing u
 Our goal is to clean up users' utterances in real-time using a fine-tuned small language model (e.g., Gemma 3 270M). It takes the raw user command and returns an output that the VUI expects at that time.
 
 To make this system practical, we use two devices: a phone where the VUI is running, and a laptop where the LLM chatbot is running. For now, the chatbot takes user commands via text input, cleans them up, and reads them out loud so that the phone (nearby) listens to the command and acts upon it.
-
-Refer to your OS-specific VUI documentation:
-iOS: https://support.apple.com/guide/iphone/use-voice-control-iph2c21a3c88/iosLinks to an external site.
-Android: https://support.google.com/accessibility/android/answer/6151848?hl=enLinks to an external site.
  
-Architecture
+Architecture:
 Similar to Part 1, the system includes:
 An MCP server hosting several tools
 An MCP client hosting a locally-run LLM and offering a terminal-based text input
